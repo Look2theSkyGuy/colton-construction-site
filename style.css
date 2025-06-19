@@ -233,20 +233,32 @@ footer img {
 .floating-button:hover {
   background: #1a1a1a;
 }
+
+/* Epic header enhancement */
 .epic-header {
-  background: linear-gradient(90deg, #111 0%, #1a1a1a 50%, #111 100%);
+  background: linear-gradient(90deg, #111 0%, #1f1f1f 50%, #111 100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 30px 60px;
   border-bottom: 4px solid #8B0000;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+.epic-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #8B0000, #ff0000, #8B0000);
 }
 
 .header-left img.logo {
-  max-height: 60px;
+  max-height: 70px;
 }
 
 .header-center {
@@ -255,19 +267,21 @@ footer img {
 }
 
 .header-center h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 800;
   color: #fff;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  letter-spacing: 0.5px;
 }
 
 .header-center .ccb {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-top: 4px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   font-style: italic;
-  letter-spacing: 0.5px;
 }
 
 .header-right ul {
@@ -281,7 +295,8 @@ footer img {
 .header-right a {
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.05rem;
   transition: color 0.3s ease;
 }
 
