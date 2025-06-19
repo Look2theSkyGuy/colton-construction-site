@@ -233,3 +233,58 @@ footer img {
 .floating-button:hover {
   background: #1a1a1a;
 }
+.epic-header {
+  background: linear-gradient(90deg, #111 0%, #1a1a1a 50%, #111 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 4px solid #8B0000;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.header-left img.logo {
+  max-height: 60px;
+}
+
+.header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-center h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.header-center .ccb {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 4px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.header-right ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.header-right a:hover {
+  color: #e63946;
+}
