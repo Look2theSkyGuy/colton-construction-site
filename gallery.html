@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery – Colton Construction</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Colton Construction</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
-  <header>…</header>
-
-  <section class="hero">
-    <h1>Gallery</h1>
-    <p>Browse our latest projects — craftsmanship captured in every frame.</p>
-  </section>
-
-  <section class="section" id="gallery">
-    <h2>Project Gallery</h2>
-    <div class="gallery-grid">
-      <!-- Replace with real image URLs -->
-      <img src="gallery1.jpg" alt="Project example">
-      <img src="gallery2.jpg" alt="Project example">
-      <!-- Add more as needed -->
+  <header>
+    <img src="https://static.wixstatic.com/media/b0ae08_4557a6bc01df4ab58647288f1895cf5a.png" alt="Colton Construction Logo" class="logo" />
+    <div>
+      <h1>Colton Construction Company</h1>
+      <p style="font-size: 0.9rem; margin: 0; color: #ccc;">OR CCB #184522</p>
     </div>
-    <p>OR CCB #184522</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Project Gallery</h2>
+    <p>Explore our craftsmanship through a collection of past residential, commercial, and civic projects across Oregon.</p>
+
+    <div class="gallery-grid">
+      <!-- Sample images — you can swap these with your actual media folder images -->
+      <img src="media/b0ae08_8e09a9934bdf4e02bbdaf7d8e587050b~mv2.avif" alt="Gallery Image 1" />
+      <img src="media/b0ae08_4214c2a3ca9b47e5a3806f952eb987d3~mv2.avif" alt="Gallery Image 2" />
+      <img src="media/b0ae08_8910fe8d11f940c29ecf3f3d118be78b~mv2.avif" alt="Gallery Image 3" />
+      <img src="media/b0ae08_1fadd31cc3a2401a8534bee0fe52f5d8~mv2.avif" alt="Gallery Image 4" />
+      <img src="media/b0ae08_941fc98f949643c798198411c9672bbb~mv2.avif" alt="Gallery Image 5" />
+      <img src="media/b0ae08_8064b7b5ba1a46ed87e6f9eb3044e451~mv2.avif" alt="Gallery Image 6" />
+    </div>
+
+    <div style="margin-top: 40px;">
+      <a href="index.html" class="cta-btn">← Back to Home</a>
+    </div>
   </section>
 
-  <footer>…</footer>
-  <a href="#contact" class="floating-button">✉️</a>
+  <footer>
+    <img src="https://static.wixstatic.com/media/b0ae08_4557a6bc01df4ab58647288f1895cf5a.png" alt="Colton Logo" style="height: 40px; margin-bottom: 10px;" />
+    <p>&copy; 2025 Colton Construction Company. All rights reserved.</p>
+  </footer>
+
+  <a href="contact.html" class="floating-button">✉️</a>
 </body>
 </html>
